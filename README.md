@@ -1,80 +1,49 @@
-**Python Port Scanner**
+# 🔍 Port Scanner (v1.0)
 
--------
-A simple yet powerful Python-based port scanner that identifies open TCP ports on a target host. This project is designed to help cybersecurity enthusiasts and SOC analysts quickly assess network security by identifying exposed services.
+**This project is for educational and ethical use only. Please use responsibly.**
 
+Welcome to my custom **TCP Port Scanner**, built with Python!  
+This tool performs basic network reconnaissance by scanning user-specified TCP ports on a given target IP or hostname.
+As part of my journey into cybersecurity and SOC analysis, I wanted to understand how basic port scanning works under the hood. Writing this from scratch helped me strengthen my skills in:
 
-🚀 **Features**
+- TCP/IP networking
+- Python socket programming
+- Reconnaissance and enumeration techniques
 
-- Scans multiple ports for TCP connectivity
+---
 
-- Resolves hostnames to IP addresses
+## 🎯 Features
 
-- Provides detailed scan results, including open/closed ports
+- Accepts a domain name or IP address as input
+- Scans one or more TCP ports for open/closed status
+- Uses Python's `socket` library to initiate TCP connections
+- Displays the resolved hostname and IP (if available)
+- Gracefully handles DNS resolution errors and timeouts
+- Includes a colorful ASCII-art banner for a fun CLI experience
 
-- User-friendly command-line interface
+---
 
-- Efficient error handling for common networking issues
+## 🛠 Technologies Used
 
+- Python 3
+- `socket` module (`AF_INET`, `SOCK_STREAM`)
+- DNS resolution (`gethostbyname`, `gethostbyaddr`)
+- Command-line input parsing
 
-📦 **Requirements**
+---
 
-- Python 3.x
+## 🚀 How to Run
 
-- Basic understanding of networking and TCP/IP
+1. **Clone the repository**
+in bash:
+->git clone https://github.com/pkdino/port-scanner-project.git
+-> cd port-scanner-project
 
-- Tested on Kali Linux and macOS
+2. **Run the scanner**
+-> python3 portscanner.py
 
-- Install required packages (if needed):
-
-- pip install socket
-
-
-
-🛠️ **Usage**
-
-Clone the repository and run the script:
-
-git clone https://github.com/your-username/python-port-scanner.git
-cd python-port-scanner
-python3 port_scanner.py
-
-When prompted, input the target IP address or domain name and a comma-separated list of TCP ports:
-
-*WELCOME TO PORT SCANNER!*
-
-Input a target IP or name of host: example.com
-Input ports (comma, separated) or input 'END/end' to exit:
-22, 80, 443
-
-Example Output:
-
-*WELCOME TO PORT SCANNER!*
-
+3. **Example Usage**
 Input a target IP or name of host: scanme.nmap.org
-Input ports (comma, separated) or input 'END/end' to exit:
-22, 80, 443
+Input a port or type 'END/end' to exit: 22, 80, 443
 
-
-📂 Project Structure
-
-.
-
-├── port_scanner.py  # Main Python script
-
-└── README.md        # Project documentation
-
-
-🔒 Security Note
-
-This tool is intended for ethical use only! Scanning networks without authorization is **ILLEGAL** and against most providers' terms of service. *Use responsibly.*
-
-
-📜 License
-
-This project is licensed under the MIT License. See the LICENSE file for more information.
-
-
-🤝 Contributing
-
-Contributions are welcome! Feel free to open an issue or submit a pull request.
+**This project is for educational and ethical use only. Please use responsibly.**
