@@ -44,6 +44,6 @@ in bash:
 
 3. **Example Usage**
 Input a target IP or name of host: scanme.nmap.org
-Input a port or type 'END/end' to exit: 22, 80, 443
+*|* Input a port or type 'END/end' to exit: 22, 80, 443
 
 **This project is for educational and ethical use only. Please use responsibly.**
